@@ -1,0 +1,24 @@
+.main-container-home {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.heading {
+  color: #ffbe38;
+}
+.calender-selection-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-right: 55px;
+}
+.selection-container {
+  display: flex;
+  flex-direction: column;
+}
