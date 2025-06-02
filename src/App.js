@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Redirect, Route, Switch} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 
 import ProtectedRoute from './components/ProtectedRoute'
 import LoginForm from './components/LoginForm'
@@ -2320,7 +2320,7 @@ const initialMonthsList = [
   },
 ]
 
-const emojisList = [
+const initialEmojisList = [
   {
     id: '380e6284-a454-11ec-b909-0242ac120002',
     emojiName: 'Very Happy',
@@ -2360,10 +2360,10 @@ class App extends Component {
     activeMonthForCalender: 1,
     monthsList: initialMonthsList,
     weeksList: daysList,
-    emojisList,
+    emojisList: initialEmojisList,
     selectedActiveEmojiId: '380e6284-a454-11ec-b909-0242ac120002',
     dayNameForMiniReport: daysList[0].day,
-    emojiNameForMiniReport: emojisList[0].emojiName,
+    emojiNameForMiniReport: initialEmojisList[0].emojiName,
     reportValue: 0,
     activeMonthForMainReport: 'January',
   }
@@ -2378,7 +2378,7 @@ class App extends Component {
   }
 
   updateEmojiCount = () => {
-    const {monthsList} = this.state
+    const {monthsList, emojisList} = this.state
     let veryHappyCount = 0
     let happyCount = 0
     let neutralCount = 0

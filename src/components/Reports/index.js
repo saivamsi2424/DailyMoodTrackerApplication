@@ -33,19 +33,19 @@ const Report = () => (
           month.dates.forEach(date => {
             switch (date.emojiName) {
               case 'Very Happy':
-                veryHappyCount++
+                veryHappyCount += 1
                 break
               case 'Happy':
-                happyCount++
+                happyCount += 1
                 break
               case 'Neutral':
-                neutral++
+                neutral += 1
                 break
               case 'Sad':
-                sad++
+                sad += 1
                 break
               case 'Very Sad':
-                verySad++
+                verySad += 1
                 break
               default:
                 break
@@ -98,7 +98,7 @@ const Report = () => (
         <>
           <Header />
           <div className="main-container-reports">
-            <h1 className="heading-reports">Overall Emoji Count</h1>
+            <h1 className="heading-reports">Overall Emojis Reports</h1>
             <div>
               <ul className="overall-emoji-report-card">
                 {emojisList.map(each => (

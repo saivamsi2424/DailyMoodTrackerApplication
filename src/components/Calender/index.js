@@ -1,7 +1,4 @@
-import {
-  MdOutlineKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight,
-} from 'react-icons/md'
+import {FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 
 import Context from '../../Context/Context'
 
@@ -14,7 +11,7 @@ const Calender = () => (
         activeMonthForCalender,
         monthsList,
         weeksList,
-        selectedActiveEmojiId,
+
         updateEmojiForDate,
         decrementMonth,
         incrementMonth,
@@ -22,26 +19,34 @@ const Calender = () => (
       return (
         <div className="main-container-calender">
           <div className="arrow-month-container">
-            <button data-testid="previous-button" className="arrow-button">
-              <MdOutlineKeyboardArrowLeft
-                onClick={() => decrementMonth()}
-                className="arrow-left"
-              />
+            <button
+              data-testid="previous-button"
+              onClick={() => decrementMonth()}
+              className="arrow-button"
+              type="button"
+              aria-label="previous Month"
+            >
+              <FaChevronLeft className="arrow-left" />
             </button>
             <h1 className="heading-calender">
               {monthsList[activeMonthForCalender - 1].monthName}
             </h1>
-            <button data-testid="next-button" className="arrow-button">
-              <MdOutlineKeyboardArrowRight
-                onClick={() => incrementMonth()}
-                className="arrow-right"
-              />
+            <button
+              data-testid="next-button"
+              onClick={() => incrementMonth()}
+              className="arrow-button"
+              type="button"
+              aria-label="Next Month"
+            >
+              <FaChevronRight className="arrow-right" />
             </button>
           </div>
           <div className="weeks-container">
             <ul className="weeks-unorder-list">
               {weeksList.map(each => (
-                <li className="week-name">{each.day}</li>
+                <li key={each.day} className="week-name">
+                  {each.day}
+                </li>
               ))}
             </ul>
             <ul className="days-unorder-list">

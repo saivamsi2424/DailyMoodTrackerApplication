@@ -20,7 +20,11 @@ const Header = props => {
             <Link to="/reports">
               <p className="reports-route">Reports</p>
             </Link>
-            <button className="logout-button" onClick={logoutClicked}>
+            <button
+              className="logout-button"
+              type="button"
+              onClick={logoutClicked}
+            >
               Logout
             </button>
           </div>
