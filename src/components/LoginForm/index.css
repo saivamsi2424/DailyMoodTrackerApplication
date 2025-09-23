@@ -1,0 +1,150 @@
+.main-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  height: 509px;
+  width: 797px;
+  border-radius: 40px;
+  background-color: #72687536;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700px;
+}
+
+.label-input-container {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400px;
+  width: 360px;
+  height: 64px;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.input-field {
+  border-color: #ffffff;
+  border-width: 0.5px;
+  border-radius: 16px;
+  background-color: #72687536;
+  height: 30px;
+}
+.input-field::placeholder {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.show-password-container {
+  height: 24px;
+  width: 124px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.showpassword-label {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.login-button {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .showpassword-label {
+    font-size: 12px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    padding: 30px;
+    width: 80%;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .input-field {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .showpassword-label {
+    font-size: 13px;
+  }
+
+  .login-button {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  .error-message {
+    font-size: 13px;
+  }
+}

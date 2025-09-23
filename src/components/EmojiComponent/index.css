@@ -1,0 +1,38 @@
+.main-container-emojis {
+  max-width: 482px;
+  min-width: 241px;
+  max-height: 242px;
+  min-height: 121px;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #42404d;
+  border-radius: 30px;
+}
+.emojis-list-for-selection {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.slection-emoji-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+}
+.emoji-name-for-selection {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+.selected-image {
+  max-height: 65px;
+  max-width: 65px;
+  box-shadow: 1px 1px 5px 1px #d8b70f;
+  min-height: 32px;
+  min-width: 33px;
+  border-radius: 50px;
+}
+.emoji-image-for-selection {
+  height: 30px;
+  width: 30px;
+}

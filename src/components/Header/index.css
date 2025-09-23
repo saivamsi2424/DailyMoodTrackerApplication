@@ -1,0 +1,83 @@
+.main-container-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.navbar-container {
+  height: 100px;
+  width: 100vw;
+  background-color: #42404d;
+  padding: 10px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading {
+  color: #ffbe38;
+  font-size: 28px;
+}
+
+.routes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  padding-right: 20px;
+}
+
+.home-route {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.reports-route {
+  color: #cbd5e1;
+  font-size: 24px;
+  margin-left: 8px;
+}
+
+.logout-button {
+  background-color: transparent;
+  border-color: #ffbe38;
+  border-radius: 8px;
+  color: #ffbe38;
+  height: 40px;
+  width: 80px;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+@media (max-width: 417px) {
+  .navbar-container {
+    height: 100px;
+    width: 100vw;
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 15px;
+  }
+
+  .routes-container {
+    width: 100%;
+    padding-right: 10px;
+    flex-wrap: wrap; 
+  }
+
+  .home-route,
+  .reports-route {
+    font-size: 13px;
+  }
+
+  .logout-button {
+    height: 20px;
+    width: 60px;
+    margin-top: 10px;
+  }
+}
