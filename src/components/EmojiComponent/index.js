@@ -21,17 +21,20 @@ const EmojiComponent = () => (
                   ? 'selected-image'
                   : 'emoji-image-for-selection'
               return (
-                <li
+                <button
+                  type="button"
                   className="slection-emoji-list-item"
                   onClick={() => updateSelectedActiveEmojiId(id)}
                 >
-                  <p className="emoji-name-for-selection">{emojiName}</p>
-                  <img
-                    className={emojiClassName}
-                    src={emojiUrl}
-                    alt={emojiName}
-                  />
-                </li>
+                  <li>
+                    <p className="emoji-name-for-selection">{emojiName}</p>
+                    <img
+                      className={emojiClassName}
+                      src={emojiUrl}
+                      alt={emojiName}
+                    />
+                  </li>
+                </button>
               )
             })}
           </ul>

@@ -117,7 +117,7 @@ class LoginForm extends Component {
     return (
       <div className="main-container">
         <div className="card-container">
-          <h1 className="heading">Daily Mood Tracker</h1>
+          <h1 className="heading-login">Daily Mood Tracker</h1>
           <form onSubmit={this.validateUser}>
             {this.renderUsernameField()}
             {this.renderPasswordField()}

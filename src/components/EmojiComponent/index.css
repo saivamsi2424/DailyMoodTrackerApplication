@@ -13,12 +13,7 @@
   flex-direction: row;
   list-style: none;
 }
-.slection-emoji-list-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 15px;
-}
+
 .emoji-name-for-selection {
   color: white;
   font-weight: 600;
@@ -35,4 +30,19 @@
 .emoji-image-for-selection {
   height: 30px;
   width: 30px;
+}
+.slection-emoji-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+  background: none;       
+  border: none;          
+  padding: 0;             
+  cursor: pointer;       
+  outline: none;     
+}
+
+.slection-emoji-list-item:focus {
+  outline: none; /* just in case */
 }
